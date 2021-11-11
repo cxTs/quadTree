@@ -100,6 +100,7 @@ Vector.prototype.limit = function(max) {
         this.normalize();
         this.mult(max);
     }
+    return this;
 }
 
 // move vector compared to the x and y passed in args
@@ -152,6 +153,7 @@ Vector.prototype.mult = function(factor) {
     this.x *= factor;
     this.y *= factor;
     this.z *= factor;
+    return this;
 }
 
 // divide a vector by a factor ( to scale the vector)
